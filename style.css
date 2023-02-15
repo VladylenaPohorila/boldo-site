@@ -12,6 +12,15 @@ h1 {
     font-size: 48px;
     line-height: 72px;
 }
+ul {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
 /*Header*/
 .header {
     background-image: url("images/header-background.png");
@@ -19,7 +28,7 @@ h1 {
 }
 .container {
     margin: 0 auto;
-    padding: 60px 0px;
+    padding: 60px 0;
     max-width: 1200px;
 }
 .nav {
@@ -32,9 +41,6 @@ h1 {
     display: flex;
     align-items: center;
     gap: 36px;
-}
-.nav__menu > li {
-    list-style: none;
 }
 .nav__menu__link {
     font-weight: 600;
@@ -55,6 +61,7 @@ h1 {
 .hero {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 58px;
 }
 .hero__description {
     max-width: 600px;
@@ -66,10 +73,17 @@ h1 {
 }
 .hero__graphic {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px 30px;
+    flex-direction: column;
 }
-.hero__graphic > div > img {
+.hero__graphic__big {
+    margin-bottom: 20px;
+}
+.hero__graphic__small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__graphic__img {
     background-color: initial;
     border-radius: 16px;
 }
@@ -96,4 +110,9 @@ h1 {
     font-size: 20px;
     line-height: 28px;
     color: white;
+}
+.hero__slider {
+    display: flex;
+    gap: 54px;
+    padding: 26px;
 }
