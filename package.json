@@ -1,0 +1,38 @@
+{
+  "name": "boldo",
+  "version": "1.0.0",
+  "description": "Boldo site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladylenaPohorila/boldo-site.git"
+  },
+  "keywords": [
+    "build",
+    "graphs"
+  ],
+  "author": "Vladylena Pohorila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladylenaPohorila/boldo-site/issues"
+  },
+  "homepage": "https://github.com/VladylenaPohorila/boldo-site#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "cssnano": "^5.1.14",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.58.1"
+  }
+}
