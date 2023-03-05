@@ -1,0 +1,108 @@
+.header {
+    background-image: url("../app/image/header-background.png");
+    color: white;
+}
+.container {
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    &__link {
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+
+    &__btn {
+      padding: 8px 40px;
+      background: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      border-radius: 24px;
+      font-weight: 700;
+
+      &-color {
+        text-decoration: none;
+        color: black;
+      }
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+
+    &__description {
+      max-width: 600px;
+    }
+}
+
+.hero__description > p {
+    margin-bottom: 40px;
+    line-height: 28px;
+    color: #F1F1F1;
+}
+
+.hero__graphic {
+    display: flex;
+    flex-direction: column;
+
+    &__big {
+      margin-bottom: 20px;
+    }
+
+    &__small {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__img {
+      background-color: initial;
+      border-radius: 16px;
+    }
+}
+
+.hero__actions {
+    display: flex;
+    gap: 24px;
+
+    &__btn-green {
+      padding: 16px 56px;
+      background: #65E4A3;
+      border: 2px solid #69E6A6;
+      border-radius: 56px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: black;
+    }
+
+    &__btn-border {
+      padding: 16px 56px;
+      background-color: initial;
+      border: 2px solid #FFFFFF;
+      border-radius: 56px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: white;
+    }
+}
+
+.hero__slider {
+    display: flex;
+    gap: 54px;
+    padding: 26px;
+}
