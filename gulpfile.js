@@ -1,12 +1,10 @@
 const { src, dest, watch, series, parallel } = require('gulp');
-
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const replace = require('gulp-replace');
-const connect = require('gulp-connect');
 const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 
@@ -40,9 +38,13 @@ function cacheBustTask() {
     .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
     .pipe(dest('.'));
 }
+
 // Browser sync to spin up a local server
 function browserSyncServe(cb) {
   browserSync.init({
+    host: "localhost",
+    port: 8082,
+    open: "external",
     server: {
       baseDir: ".",
     },
@@ -55,25 +57,20 @@ function browserSyncServe(cb) {
   });
   cb();
 }
-function browserSyncReload() {
+
+function browserSyncReload(cb) {
   browserSync.reload();
+  cb();
 }
 
 function watchTask() {
   watch(
     [files.scssPath, files.jsPath],
     { interval: 1000, usePolling: true },
-    series(parallel(scssTask, jsTask), cacheBustTask)
+    series(parallel(scssTask, jsTask), cacheBustTask, browserSyncReload)
   );
 }
-function host() {
-  connect.server({
-    root: ['dist'],
-    port: 8000,
-    base: 'http://localhost',
-    livereload: true
-  });
-}
+
 function bsWatchTask() {
   watch('index.html', browserSyncReload);
   watch(
@@ -83,13 +80,9 @@ function bsWatchTask() {
   );
 }
 
-exports.default = series(parallel(scssTask, jsTask), cacheBustTask, watchTask, host, );
-
-exports.bs = series(
+exports.default = series(
+  clean,
   parallel(scssTask, jsTask),
   cacheBustTask,
-  browserSyncServe,
-  bsWatchTask,
-  host,
+  parallel(watchTask, browserSyncServe, bsWatchTask)
 );
-
