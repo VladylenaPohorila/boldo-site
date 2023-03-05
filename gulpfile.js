@@ -81,7 +81,6 @@ function bsWatchTask() {
 }
 
 exports.default = series(
-  clean,
   parallel(scssTask, jsTask),
   cacheBustTask,
   parallel(watchTask, browserSyncServe, bsWatchTask)
