@@ -3,6 +3,9 @@
   &__wrapper {
     max-width: 1140px;
     margin: 0 auto;
+    &__mb {
+      margin-bottom: 186px;
+    }
   }
 
   &__wrapper-title {
@@ -55,5 +58,47 @@
         width: 24px;
         height: 26px;
       }
+  }
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__img {
+    margin-right: 74px;
+    max-width: 494px;
+  }
+  &__info {
+    margin-left: 74px;
+  }
+  &__items {
+    margin-bottom: 56px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+      &__icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__text {
+      margin-left: 26px;
+    }
+  }
+
+  &__btn {
+    padding: 16px 56px;
+    background-color: #0A2640;
+    border-radius: 56px;
+    color: white;
+    cursor: pointer;
   }
 }
