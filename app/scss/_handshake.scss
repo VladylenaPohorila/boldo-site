@@ -1,0 +1,16 @@
+.handshake {
+  margin-bottom: 120px;
+  &__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__wrapper-title {
+    max-width: 842px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
