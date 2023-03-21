@@ -65,6 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 120px;
   &__title {
     margin-bottom: 40px;
   }
@@ -72,9 +73,34 @@
     margin-right: 74px;
     max-width: 494px;
   }
+
+  &__img-second{
+    margin-left: 74px;
+    max-width: 494px;
+  }
+
   &__info {
     margin-left: 74px;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+
+    &__item-text {
+      margin-left: 12px;
+    }
   }
+
+  &__info-second {
+    margin-right: 74px;
+  }
+
   &__items {
     margin-bottom: 56px;
   }
@@ -101,4 +127,15 @@
     color: white;
     cursor: pointer;
   }
+}
+
+.connect-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action {
+  background-color: #0A2640;
+  color: white;
 }
