@@ -1,0 +1,47 @@
+.team {
+  margin-bottom: 160px;
+
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    max-width: 1100px;
+    margin-bottom: 56px;
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 24px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      max-width: 500px;
+    }
+  }
+
+  &__list {
+    max-width: 500px;
+
+    select {
+      width: 100%;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      background: url("../app/image/arrow-down.png") right center no-repeat;
+      border: none;
+      border-bottom: 1px solid;
+      font-size: 20px;
+      line-height: 36px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+}
