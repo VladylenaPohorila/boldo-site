@@ -1,0 +1,21 @@
+.connect {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 240px;
+    text-align: center;
+    background: url("../app/image/mask.png") #0A2640 no-repeat;
+    border-radius: 12px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    color: white;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
