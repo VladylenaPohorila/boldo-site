@@ -17,5 +17,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__input {
+      width: 370px;
+      
+      padding: 12px 32px;
+      border: 2px solid #000;
+      border-radius: 240px;
+
+      &-mr {
+        margin-right: 24px;
+      }
+    }
+
+    &__btn {
+      padding: 16px 56px;
+      background-color: #65E4A3;
+      border: 2px solid #65E4A3;
+      border-radius: 56px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #0A2640;
+    }
   }
 }
