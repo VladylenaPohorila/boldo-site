@@ -1,7 +1,19 @@
 .comments {
   margin-bottom: 124px;
-  padding: 96px 100px 96px 150px;
   background-color: #0A2640;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 95px 50px;
+
+    @media (max-width: 1200px) {
+      max-width: 992px;
+    }
+    @media (max-width: 992px) {
+      max-width: 768px;
+    }
+  }
 
   &__title {
     max-width: 716px;
