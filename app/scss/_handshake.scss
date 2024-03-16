@@ -30,12 +30,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__info-item {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
 
       &__img {
         margin-bottom: 24px;
@@ -73,6 +82,9 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 120px;
+   @media (max-width: 1200px) {
+    flex-direction: column;
+  }
   &__title {
     margin-bottom: 40px;
   }
@@ -140,6 +152,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+   @media (max-width: 1200px) {
+    flex-direction: column;
+   }
 }
 
 .action {
