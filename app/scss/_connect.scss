@@ -1,11 +1,12 @@
 .connect {
+  background: url("../app/image/mask.png") #0A2640 no-repeat;
+  border-radius: 12px;
+
   &__container {
-    max-width: 1200px;
+    max-width: 716px;
     margin: 0 auto;
-    padding: 72px 240px;
+    padding: 72px 0;
     text-align: center;
-    background: url("../app/image/mask.png") #0A2640 no-repeat;
-    border-radius: 12px;
   }
 
   &__title {
